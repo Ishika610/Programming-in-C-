@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(int argc, char const *argv[])
+{
+    float n,ans;
+    cout<<"the number whose cube root has to be found ";
+    cin>>n;
+    ans=cbrt(n);
+    cout<<"the cube root of the number "<<ans;
+    return 0;
+}
