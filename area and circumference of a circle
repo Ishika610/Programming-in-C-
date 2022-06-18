@@ -1,0 +1,12 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(int argc, char const *argv[])
+{
+    float r,a,c;
+    cout<<"the radius of the circle is ";
+    cin>>r;
+    a= 3.14*r*r;
+    c= 2*3.14*r;
+    cout<<"the area and circumference of the circle is "<<a<<" and "<<c;
+    return 0;
+}
