@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(int argc, char const *argv[])
+{
+    int n, s = 0, r, a;
+    cout << "enter your number ";
+    cin >> n;
+    for (a = n; a > 0; a = a / 10)
+    {
+        r = a % 10;
+        s = s * 10 + r;
+    }
+    if (s == n)
+    {
+        cout << "number is pallindrom";
+    }
+    else
+    {
+        cout << "number is not pallindrom";
+    }
+
+    return 0;
+}
