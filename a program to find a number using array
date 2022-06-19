@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int ar[8],i;
+    int count=0,val=13;
+    cout<<"enter array";
+    for(i=0;i<8;i++)
+    {
+        cin>>ar[i];
+    }
+    for(i=0;i<8;i++)
+    {
+        if(ar[i]==val)
+            {
+                count++;
+            }
+    }
+    if(count==0)
+    {
+        cout<<"not found";
+    }
+    else
+    {
+        cout<<"found";
+    }
+    
+    return 0;
+}
