@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int i,j,ar[2][3];
+    cout<<"enter 2d arrray";
+    for(i=0;i<2;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            cin>>ar[i][j];
+        }
+    }
+     for(i=0;i<2;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            cout<<ar[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
+    return 0;
+}
