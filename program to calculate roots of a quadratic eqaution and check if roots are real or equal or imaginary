@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(int argc, char const *argv[])
+{
+    int a, b, c, q, x;
+    cout << "enter your values ";
+    cin >> a >> b >> c;
+    x = (-b + sqrt(pow(b, 2) - 4 * a * c)) / 2 * a;
+    cout << "one root is " << x << endl;
+    q = (-b - sqrt(pow(b, 2) - 4 * a * c)) / 2 * a;
+    cout << "other root is " << q << endl;
+    if ((pow(b, 2) - 4 * a * c) > 0)
+    {
+        cout << "the roots are real";
+    }
+    else if ((pow(b, 2) - 4 * a * c) == 0)
+    {
+        cout << "the roots are equal";
+    }
+    else
+    {
+        cout << "the roots are imaginary";
+    }
+
+    return 0;
+}
