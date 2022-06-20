@@ -1,0 +1,35 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int i, j, ar[2][3], be[2][3], cf[2][3];
+    cout << "enter 2d arrray\n";
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            cin >> ar[i][j]; 
+        }
+    }
+
+    cout << "enter other 2d array\n";
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            cin >> be[i][j];
+        }
+    }
+    cout<<"the additional matrix is\n";
+    for (i = 0; i < 2; i++)
+    {
+        for (j = 0; j < 3; j++)
+        {
+            cf[i][j] = ar[i][j] + be[i][j];
+            cout << cf[i][j] << " ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
