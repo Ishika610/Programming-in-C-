@@ -1,0 +1,11 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(int argc, char const *argv[])
+{
+    float n,ans;
+    cout<<"the number whose square root has to be found ";
+    cin>>n;
+    ans=sqrt(n);
+    cout<<"the square root of the number is "<<ans;
+    return 0;
+}
