@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+class area
+{
+    float a,r;
+    public:
+    void getdata()
+    {
+        cout<<"enter radius";
+        cin>>r;
+    }
+    void process()
+    {
+        a=3.14*r*r;
+    }
+    void putdata()
+    {
+        cout<<a;
+    }
+
+};
+int main()
+{
+    area s;
+    s.getdata();
+    s.process();
+    s.putdata();
+    return 0;
+}
