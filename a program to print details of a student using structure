@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+  using namespace std;
+  struct student
+  {
+      int rollno;
+      char name[10];
+      int sec;
+  };
+  
+  int main()
+  {
+      student si;
+      cout<<"enter rollno ,class and section";
+      cin>>si.rollno;
+      cin>>si.name;
+      cin>>si.sec;
+      cout<<"roll no :"<<si.rollno<<endl;
+      cout<<"name :"<<si.name<<endl;
+      cout<<"sec :"<<si.sec<<endl;
+      return 0;
+  }
