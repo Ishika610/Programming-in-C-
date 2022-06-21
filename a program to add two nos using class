@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+class sum
+{
+    public:
+    int a,b,c;
+    
+};
+int main()
+{
+    sum si;
+    si.a=10;
+    si.b=20;
+    si.c=si.a+si.b;
+    cout<<si.c;
+
+    return 0;
+}
