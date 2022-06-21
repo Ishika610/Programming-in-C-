@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main(int argc, char const *argv[])
+{
+    int a,n,s,r;
+    s=0;
+    cout<<"enter a number ";
+    cin>>n;
+    for ( a=n ; a >0; a=a/10)
+    {
+       r=a%10;
+       s=s+r;
+
+    }
+    cout<<"sum is "<<s;
+    return 0;
+}
