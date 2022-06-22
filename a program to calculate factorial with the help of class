@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+using namespace std;
+class fact
+{
+    int n;
+    int f = 1;
+
+public:
+    void getdata()
+    {
+        cout << "enter n ";
+        cin >> n;
+    }
+    void process()
+    {
+        int i;
+        for (i = n; i >= 1; i--)
+        {
+            f = f * i;
+        }
+    }
+    void putdata()
+    {
+        cout << f;
+    }
+};
+int main()
+{
+    fact fi;
+    fi.getdata();
+    fi.process();
+    fi.putdata();
+    return 0;
+}
