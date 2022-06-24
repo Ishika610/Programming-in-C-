@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int fact();
+int main()
+{
+    int f;
+    f=fact();
+    cout<<f;
+    return 0;
+}
+int fact()
+{
+    int n,f=1,i;
+    cout<<"enter a number";
+    cin>>n;
+    for(i=n;i>=1;i--)
+    {
+        f=f*i;
+    }
+    return f;
+}
