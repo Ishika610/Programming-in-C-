@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+class add
+{
+    int a,b,c;
+    public:
+    add()
+    {
+        cout<<"enter two numbers";
+        cin>>a>>b;
+    }
+    void process()
+    {
+        c=a+b;
+    }
+    void putdata()
+    {
+        cout<<"the sum is"<<c;
+    }
+};
+int main()
+{
+    add a;
+    a.process();
+    a.putdata();
+    
+    return 0;
+}
