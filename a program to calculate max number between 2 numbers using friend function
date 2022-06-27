@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+class maxi
+{
+    int a,b;
+    friend int main();
+};
+int main()
+{
+   maxi t;
+   t.a=10;
+   t.b=20;
+   if(t.a>t.b)
+   {
+       cout<<t.a<<"is max";
+   } 
+   else
+   {
+       cout<<t.b<<" is max";
+   }
+   
+    
+    return 0;
+}
