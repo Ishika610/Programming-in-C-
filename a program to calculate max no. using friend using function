@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+class test
+{
+    int a,b;
+    public:
+    void getdata(int x,int y)
+    {
+        a=x;
+        b=y;
+    }
+    friend void max(test);
+};
+void max(test t2)
+{
+    if(t2.a>t2.b)
+    {
+        cout<<t2.a;
+    }
+    else
+    {
+        cout<<t2.b;
+    }
+}
+int main()
+{   
+    test t1;
+    t1.getdata(10,20);
+    max(t1);
+    return 0;
+}
