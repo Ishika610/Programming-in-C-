@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+class test
+{
+    public:
+    test()
+    {
+        cout<<"this is a constructor"<<endl;
+    }
+    ~test()
+    {
+        cout<<"this is a destructor"<<endl;
+    }
+};
+int main()
+{
+    {
+        test t1,t2;
+        {
+            test t3;
+            {
+                test t4;
+            }
+            test t5;
+        }
+    }
+    return 0;
+}
