@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+class test
+{
+    int a,b,c;
+    public:
+    void getdata(int x,int y)
+    {
+        a=x;b=y;
+    }
+    int add()
+    {
+        c=a+b;
+        return c;
+    }
+};
+int main()
+{
+    int p=10,q=20;
+    test t1;
+    t1.getdata(p,q);
+    int z=t1.add();
+    cout<<z;
+    return 0;
+}
