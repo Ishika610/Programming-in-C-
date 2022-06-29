@@ -1,0 +1,29 @@
+#include <bits/stdc++.h>
+using namespace std;
+class test
+{
+    int a;
+    public:
+    void getdata(int x)
+    {
+        a=x;
+    }
+    void operator+(test s1)
+    {
+        a=s1.a + 1;
+    }
+    void putdata()
+    {
+        cout<<a;
+    }
+};
+int main()
+{
+    test s1;
+    s1.getdata(10);
+    test s2;
+    s2 + s1;
+    s1.putdata();
+    s2.putdata();
+    return 0;
+}
