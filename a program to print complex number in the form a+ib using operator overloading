@@ -1,0 +1,37 @@
+#include <bits/stdc++.h>
+using namespace std;
+class comp
+{
+    int a,b;
+    public:
+    comp()
+    {
+        
+    }
+    comp(int x,int y)
+    {
+        a=x;b=y;
+    }
+    comp operator+(comp t1)
+    {
+        comp temp;
+        temp.a=a+t1.a;
+        temp.b=b+t1.b;
+        return temp;
+    }
+    void putdata()
+    {
+        cout<<a<<"+i"<<b<<endl;
+    }
+};
+int main()
+{
+    comp c1(10,20);
+    comp c2(30,40);
+    comp c3;
+    c3=c1+c2;
+    c1.putdata();
+    c2.putdata();
+    c3.putdata();
+    return 0;
+}
