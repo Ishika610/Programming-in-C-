@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+class test
+{
+    int a;
+    public:
+    test(int x)
+    {
+        a=x;
+    }
+    void putdata()
+    {
+        cout<<a;
+    }
+    friend int operator-(test);
+};
+int operator-(test t2)
+{
+    int s;
+    s=-t2.a;
+    return s;
+}
+int main()
+{
+    int p=20;
+    test t1(p);
+    int z=-t1;
+    cout<<z;
+    return 0;
+}
