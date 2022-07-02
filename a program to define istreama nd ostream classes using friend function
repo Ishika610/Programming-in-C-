@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+class test
+{
+    int a;
+    public:
+    friend void operator>>(istream&,test&);
+    void operator<<(ostream &out)
+    {
+        out<<a;
+    }
+};
+void operator>>(istream &in,test &t2)
+{
+    cout<<"enter a number ";
+    in>>t2.a;
+}
+int main()
+{
+    int p=20;
+    test t1;
+    cin>>t1;
+    t1<<cout;
+    return 0;
+}
