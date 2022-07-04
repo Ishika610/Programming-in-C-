@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+class A
+{
+    public:
+    A(int x,int y)
+    {
+        cout<<"this is A class constructor x="<<x<<"y="<<y<<endl;
+    } 
+};
+class B
+{
+    public:
+    B(int x,int y)
+    {
+        cout<<"this is B class constructor x="<<x<<"y="<<y<<endl;
+    } 
+};
+class C:public A,public B
+{
+    public:
+    C(int x,int y):A(x+1,y-1),B(x+x,y*y)
+    {
+        cout<<"this is C class constructor x="<<x<<"y="<<y<<endl;
+    } 
+};
+int main()
+{
+    C obj(10,10);
+    return 0;
+}
