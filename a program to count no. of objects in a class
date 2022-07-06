@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+class obj
+{
+    static int count;
+    public:
+    obj()
+    {
+        cout<<"calling constructor "<<endl;
+        count++;
+    }
+    static int objcount()
+    {
+        return count;
+    }
+};
+int obj::count;
+int main()
+{
+    obj t1,t2,t3;
+    int z= obj::objcount();
+    cout<<"the no of object are "<<z<<endl;
+    return 0;
+}
