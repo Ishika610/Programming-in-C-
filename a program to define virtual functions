@@ -1,0 +1,39 @@
+#include <bits/stdc++.h>
+using namespace std;
+class A
+{ 
+    public:
+    void show()
+    {
+        cout<<"this is base class"<<endl;
+    }
+    virtual void getdata()
+    {
+        cout<<"this is base class getdata"<<endl;
+    }
+    virtual void putdata()=0;
+};
+class B: public A
+{ 
+    public:
+    void show()
+    {
+        cout<<"this is derived class"<<endl;
+    }
+    void getdata()
+    {
+        cout<<"this is derived class getdata"<<endl;
+    }
+    void putdata()
+    {
+        cout<<"this is derived class putdata"<<endl;
+    }
+};
+int main()
+{
+    A *a1=new B;
+    a1->show();
+    a1->getdata();
+    a1->putdata();
+    return 0;
+}
