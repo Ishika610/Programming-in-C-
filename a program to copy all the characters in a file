@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    char ch[80];
+    ifstream fin;
+    fin.open("ab.cpp");
+    while(fin)
+    {
+        fin.getline(ch,100);
+        cout<<ch<<endl;
+    }
+    fin.close();
+    return 0;
+}
