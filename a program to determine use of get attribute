@@ -1,0 +1,13 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    char ch;
+    cout<<"enter your section: ";
+    //cin>>ch;
+    //ch=cin.get();
+    cin.get(ch);
+    cout<<"section : "<<ch;
+    return 0;
+}
