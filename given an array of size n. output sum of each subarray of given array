@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout<<"enter size of array";
+    cin>>n;
+    int ar[n]; 
+    for(int i=0;i<n;i++)
+    {
+        cin>>ar[i];  
+    }
+    for(int i=0;i<n;i++)
+    {
+        int s=0;
+        for(int j=i;j<n;j++)
+        {
+            s = s + ar[j];
+            cout<<"the sum of subarray is "<<s<<endl;
+        }
+
+    }
+    return 0;
+}
